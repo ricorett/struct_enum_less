@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cmath>
+
 
 enum month {
   kExit,
@@ -16,9 +18,4 @@ enum month {
   november,
   december
 };
-
-int input(int &nInput) {
-  std::cout << "Input a number of month, intput 0 for exit: " << std::endl;
-  std::cin >> nInput;
-  return nInput;
-}
+month input(int &nInput);

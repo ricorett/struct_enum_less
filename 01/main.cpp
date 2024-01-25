@@ -1,50 +1,50 @@
 #include "header.hpp"
-#include <cmath>
+
 
 int main() {
   int nInput = 1;
-
+  
 
   while (nInput != 0) {
-    input(nInput);
-    switch (nInput) {
-    case (kExit):
+    
+    switch (input(nInput)) {
+    case kExit:
       exit(0);
       break;
-    case (january):
+    case january:
       std::cout << "January" << std::endl;
       break;
-    case (february):
+    case february:
       std::cout << "February" << std::endl;
       break;
-    case (march):
+    case march:
       std::cout << "March" << std::endl;
       break;
-    case (april):
+    case april:
       std::cout << "April" << std::endl;
       break;
-    case (may):
+    case may:
       std::cout << "May" << std::endl;
       break;
-    case (june):
+    case june:
       std::cout << "June" << std::endl;
       break;
-    case (july):
+    case july:
       std::cout << "Jule" << std::endl;
       break;
-    case (august):
+    case august:
       std::cout << "August" << std::endl;
       break;
-    case (september):
+    case september:
       std::cout << "September" << std::endl;
       break;
-    case (october):
+    case october:
       std::cout << "October" << std::endl;
       break;
-    case (november):
+    case november:
       std::cout << "November" << std::endl;
       break;
-    case (december):
+    case december:
       std::cout << "December" << std::endl;
       break;
     default:
@@ -55,4 +55,11 @@ int main() {
     }
   }
   return 0;
+}
+
+
+month input(int &nInput) {
+  std::cout << "Input a number of month, intput 0 for exit: " << std::endl;
+  std::cin >> nInput;
+  return static_cast<month>(nInput);
 }

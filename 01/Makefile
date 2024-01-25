@@ -1,7 +1,7 @@
 all: build
 
 build: main.cpp header.hpp
-	g++ main.cpp 
+	g++ -std=c++2b main.cpp 
 
 
 clean:
